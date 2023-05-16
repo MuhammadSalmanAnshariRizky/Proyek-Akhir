@@ -19,9 +19,10 @@ a{
 }
 nav {
     display: flex;
+    flex-direction: row;
     background-color: black;
     justify-content: space-around;
-    padding : 20px 0
+    padding : 20px 0;
 }
 nav ul {
     display :flex;
@@ -36,8 +37,7 @@ nav ul {
     padding:20px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
-    height: 605px;
+    flex-direction: row;
 }
 .content_kiri{
     flex:3;
@@ -87,4 +87,46 @@ nav ul {
 }
 .gambar{
     margin: 100px 100px ;
+}
+/*untuk hp*/
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: row;
+    }
+    .container_1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_kiri{
+        order: 2;
+    }
+    .kotak{
+        width : 310px;
+        height: 50px;
+        font-size: 35px;
+        margin-left: 50px;
+    }
+    .content_kanan{
+        order: 1;
+    }
+    .ajakan{
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .gambar{
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+    .kalimat1{
+        font-size: 17px;
+        margin-left: 50px;
+    }
+    .ajakan{
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    .ajakan2{
+        font-size: 40px;
+        margin-left: 50px;
+    }
 }
